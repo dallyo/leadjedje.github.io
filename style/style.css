@@ -1,0 +1,405 @@
+
+@font-face { /*DEFINITION D'UNE NOUVELLE POLICE*/
+    font-family: 'Le Murmure_Regular';
+    src:    url('Le_Murmure-Regular_web.eot');
+    src:    url('Le_Murmure-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('Le_Murmure-Regular_web.woff') format('woff'),
+            url('Le_Murmure-Regular_web.woff2') format('woff2'),
+            url('Le_Murmure-Regular_web.ttf') format('truetype'),
+            url('Le_Murmure-Regular_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INDEX*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	cursor: crosshair;
+}
+
+
+header { /*LE HEADER S'ADAPTE À LA TAILLE DE LA PAGE: C'EST LA SEULE CHOSE QUE L'ON VOIT EN ARRIVANT SUR LA PAGE*/
+	
+	height: 100vh;
+}
+
+
+#presentation_principale {
+	
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+#gif_presentation {
+	
+	width: 32%;
+	min-width: 380px;
+	height: auto;
+}
+
+
+#leadjedje {
+	 
+	font-family: 'Le Murmure_Regular';
+	position: absolute; /*TEXTE SUR L'IMAGE*/
+	font-size: 7.5em;
+	text-align: center;
+	color: black;
+	letter-spacing: 0.5em;
+}
+
+
+nav { 
+	
+	height: 20px;
+	padding-top: 24px;
+	padding-right: 35%;
+	padding-left: 35%;
+	border-top: 1.3px solid black;
+
+}
+
+
+
+#liens_generaux {
+	
+	display: flex;
+	justify-content: space-between;
+	font-weight: 400;
+}
+
+
+a { /*LES LIENS NE SONT PAS BLEUS ET SOULIGNÉS COMME PAR DÉFAUT*/
+	
+	color: black;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+
+
+#li1 { /*AFIN DE METTRE UNE LIMITE AU RAPPROCHEMENT DES TERMES PROJET ET CONTACT À LA MANIPULATION DE LA PAGE*/
+	
+	margin-right: 25px;
+}
+
+
+#li2 { /*AFIN DE METTRE UNE LIMITE AU RAPPROCHEMENT DES TERMES PROJET ET CONTACT À LA MANIPULATION DE LA PAGE*/
+	
+	margin-left: 25px;
+}
+
+
+#part2{ /*LA SECTION S'ADAPTE À LA TAILLE DE LA PAGE: C'EST LA SEULE CHOSE QUE L'ON VOIT EN ARRIVANT SUR LA PAGE*/
+	
+	height: 150vh;
+	padding-top: 10px;
+}
+
+
+td{ /*ASPECT DES CASES DU TABLEAU*/
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 0.10px solid black;
+	color: black;
+}
+
+
+.titre_projets{
+
+	width: 450px;
+	font-weight: 100;
+	min-width: 250px;
+	color: black;
+	padding-left: 1px;
+	font-size: 0.92em;
+}
+
+
+.paragraphe_projets{
+
+	font-weight: 100;
+	min-width: 600px;
+	color: black;
+	padding-right: 180px;
+	line-height: 1.3em;
+	font-size: 0.92em;
+}
+
+
+.paragraphe_projets:hover{
+
+	color: blue;
+}
+
+
+.date_projets{
+
+	font-weight: 100;
+	width: 50px;
+	text-align: right;
+}
+
+
+.puces_projets{ 
+
+	font-family: 'Le Murmure_Regular';
+	font-size: 2em;
+	color: black;
+	width: 10px;
+	vertical-align: middle;
+}
+
+
+#part3{
+
+	height: 100vh;
+	padding-top: 40px;
+}
+
+
+#part3 table{ 
+
+	border-top: 1.3px solid black;
+}
+
+
+#info_fr{ /*LE PADDING TOP S'APPLIQUE À TOUTE LA LIGNE CAR IL S'AGIT D'UN TABLEAU*/
+
+	font-weight: 300;
+	padding-top: 24px;
+	width: 495px;
+	margin-right: 200px;
+	color: black;
+	line-height: 1.3em;
+	font-size: 0.92em;
+	font-weight: 400;
+}
+
+
+#info_en{
+
+	font-weight: 300;
+	width: 495px;
+	color: black;
+	line-height: 1.3em;
+	font-size: 0.92em;
+	font-weight: 400;
+}
+
+
+#contact{
+
+	font-weight: 300;
+	width: 350px;
+	text-align: center;
+	line-height: 1.1em;
+}
+
+
+#email{
+
+	color: blue;
+}
+
+
+#part2 em, #part2 strong{
+
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGES PROJETS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#conteneur_projets{
+	
+	height: auto;
+	display: flex;
+	font-weight: 100;
+}
+
+
+#description_projets{
+
+	width: 50%;
+	font-size: 0.92em;
+	line-height: 1.3em;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+
+#bloctexte{
+	
+	position: fixed;
+	max-width: 50%;
+}
+
+
+#description_projets h1{
+
+	padding-bottom: 24px;
+	
+}
+
+
+#description_projets_infos{
+
+	border-top: 0.10px solid black;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+#description_projets_texte{
+
+	border-top: 1.3px solid black;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+#description_projets_texte em, #description_projets_texte strong{
+
+	font-weight: 300;
+}
+
+
+.lien_index{
+
+	font-family: 'Le Murmure_Regular';
+	font-size: 2em;
+	position: fixed;
+}
+
+.lien_index:hover{
+
+	color: blue;
+}
+
+
+#photos_projets{
+
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+}
+
+
+#photo1{
+
+	max-width: 500px;
+	height: auto;
+}
+
+
+#photo2{
+
+	max-width: 500px;
+	height: auto;
+}
+
+
+#photo3{
+
+	max-width: 500px;
+	height: auto;
+}
+
+
+#photo4{
+
+	max-width: 500px;
+	height: auto;
+}
+
+
+#photo5{
+
+	max-width: 500px;
+	height: auto;
+
+}
+
+
+#photo6{
+
+	max-width: 500px;
+	height: auto;
+}
+
+
+
